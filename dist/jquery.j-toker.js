@@ -623,9 +623,10 @@
     }
 
     // if this check is already in progress, return existing promise
-    if (this.configDfd) {
-      return this.configDfd;
-    }
+    // josh comment this one out to force to get the check the status
+    // if (this.configDfd) {
+    //   return this.configDfd;
+    // }
 
     var dfd = $.Deferred();
 
